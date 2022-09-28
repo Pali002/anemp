@@ -40,13 +40,15 @@ function renderTable(employees) {
         let tr = document.createElement('tr');
         let tdId = document.createElement('td');
         let tdName = document.createElement('td');
-        let tdDel = document.createElement('td');
+        let tdButton = document.createElement('td');
         let delBtn = makeDelButton(employee.id);
+        let editBtn = makeEditButton(employee);
 
         tr.appendChild(tdId);
         tr.appendChild(tdName);
-        tr.appendChild(tdDel);
-        tdDel.appendChild(delBtn);
+        tr.appendChild(tdButton);
+        tdButton.appendChild(delBtn);
+        tdButton.appendChild(editBtn);
         tbody.appendChild(tr);
     
         tdId.textContent = employee.id;
@@ -127,3 +129,14 @@ function deleteEmployee(id) {
         console.log(result);
     });
 };
+
+function makeEditButton(employee) {
+    let editBtn = document.createElement('button');
+    editBtn.classList.add('btn');
+    editBtn.classList.add('btn-primary');
+    editBtn.textContent = 'Szerkesztés';
+    editBtn.addEventListener('click', ()=> {
+        
+    });
+    return editBtn;
+}
