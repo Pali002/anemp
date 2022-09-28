@@ -1,32 +1,24 @@
 {
   "employees": [
     {
-      "id": 1,
-      "name": "Pont Ferenc"
-    },
-    {
-      "id": 2,
-      "name": "Varga Béla"
-    },
-    {
-      "id": 3,
-      "name": "Varga Irén"
-    },
-    {
-      "name": "Korto Iren",
-      "id": 4
+      "name": "Kolompár Pál",
+      "id": 1
     },
     {
       "name": "Pali Pál",
-      "id": 5
+      "id": 2
     },
     {
       "name": "Kali Géza",
-      "id": 6
+      "id": 3
     },
     {
       "name": "Beton Hofi",
-      "id": 7
+      "id": 4
+    },
+    {
+      "name": "Pont Ferenc",
+      "id": 5
     }
   ]
 }
