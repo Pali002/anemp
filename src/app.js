@@ -13,9 +13,9 @@ const host = 'http://localhost:3000';
     getEmployees();
 })();
 
-dowButton.addEventListener('click', () => {
+// dowButton.addEventListener('click', () => {
     
-});
+// });
 
 function getEmployees() {
     let endpoint = 'employees';
